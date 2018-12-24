@@ -18,7 +18,7 @@ class UserController extends BaseController{
 
 		$books = $user->book;
 
-		return View::make('home',compact('books'));
+		return View::make('home',compact('user'));
 	}
 
 	public function getLogin(){

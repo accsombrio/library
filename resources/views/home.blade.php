@@ -1,11 +1,11 @@
 @extends ('layout.main')
 
-@section('books')
+@section('content')
 	<div class="container">
 		<ul class="list-group">
-		@foreach ($books as $book)
-			<li class="list-group-item">{{$book->title}} written by: {{$book->writer}}</li>
-		@endforeach
+
+			<li class="list-group-item">You are logged in with the username: <b>{{$user->username}}</b></li>
+			<li class="list-group-item">This is your email address: <b>{{$user->email}}</b></li>
 		</ul>
 	</div>
 @stop
