@@ -44,6 +44,8 @@
                         @if (Auth::check())
                         @yield('books')
                         <br>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/addbook">Add Book</a></li>
                         <li><a href="/logout">Log Out</a></li>
                         @else
                         <li>{{ link_to_route('login','Log In') }}</li>

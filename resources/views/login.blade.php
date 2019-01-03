@@ -1,6 +1,7 @@
 @extends ('layout.main')
 
 @section('content')
+<h2 style="text-align:center;">Welcome to Library</h2>
 	<div class="row">
 		<div class="col-md-4 col-md-offset-4">
 			{{Form::open(array('url'=>'/login','method'=>'post'))}}
