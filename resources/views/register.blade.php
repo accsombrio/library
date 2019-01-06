@@ -17,8 +17,8 @@
 				{{Form::label('email','Email')}}
 				{{Form::text('email',null,array('class'=>'form-control'))}}
 
-				@if($errors->has('username'))
-					{{$errors->first('username')}}
+				@if($errors->has('email'))
+					{{$errors->first('email')}}
 				@endif
 			</div>
 			<div class="form-group">
